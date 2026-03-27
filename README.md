@@ -103,48 +103,56 @@ python evaluate.py
   QA-01  ✓ CORRECT  Keywords: 80%  Top relevance: 86%
   Q: What is the difference between a weight and a bias in a neural network, and why ...
   Retrieved: But what is a Neural Network?
+  
   Missing keywords: ['trainable']
+
   Answer preview: A weight is the multiplier attached to each connection between neurons, determining how strongly one       
-neuron’s output influences the next — i...
-  53.5s
+neuron’s output influences the next...
+  
 
 Running QA-02 (2/5)...
 
   QA-02  ✓ CORRECT  Keywords: 100%  Top relevance: 68%
   Q: What role do hidden layers play when recognising handwritten digits, according t...
   Retrieved: But what is a Neural Network?
+  
   Answer preview: Hidden layers sit between the input and output of the network and are responsible for learning
-progressively more abstract visual features o...
-  1.0s
+progressively more abstract visual features...
+  
 
 Running QA-03 (3/5)...
 
   QA-03  ✓ CORRECT  Keywords: 100%  Top relevance: 81%
   Q: Why is softmax applied at the final step of a transformer, and what are logits?...
   Retrieved: Transformers, the tech behind LLMs
+  
   Answer preview: Logits are the raw real‑valued scores produced at the output of a transformer: the final hidden state for  
-the last position is multiplied by...
-  1.2s
+the last position is multiplied...
+  
 
 Running QA-04 (4/5)...
 
   QA-04  ✓ CORRECT  Keywords: 80%  Top relevance: 79%
   Q: What core limitation of traditional machine learning does deep learning address,...
   Retrieved: What is Deep Learning?
+  
   Missing keywords: ['manual']
+  
   Answer preview: Deep learning overcomes the **feature‑engineering bottleneck** of traditional machine learning by
-automatically learning useful representati...
-  1.9s
+automatically learning useful representation...
+  
 
 Running QA-05 (5/5)...
 
   QA-05  ✓ CORRECT  Keywords: 60%  Top relevance: 83%
   Q: What is overfitting in machine learning, how does it arise in a supervised learn...
   Retrieved: All About ML & Deep Learning
+  
   Missing keywords: ['generalise', 'test']
+  
   Answer preview: Overfitting is when a model memorises the training data—including its noise, outliers, and random
 fluctuations—rather than learning the true...
-  1.3s
+  
 <img width="1778" height="512" alt="image" src="https://github.com/user-attachments/assets/ed3d951f-1532-4ae4-9ecb-9bf55b166c71" />
 
   Source precision (top-1):  5/5  (100%)
