@@ -1,0 +1,52 @@
+[
+  {
+    "id": "QA-01",
+    "question": "In a neural network, what is the difference between a weight and a bias, and why do we need both?",
+    "answer": "A weight is a multiplier applied to an input neuron's activation that controls the strength of the connection between two neurons. A bias is an additive term that shifts the activation function, controlling whether a neuron activates regardless of inputs. Weights determine influence, while bias determines activation threshold. Both are necessary because weights alone cannot reposition decision boundaries.",
+    "source": {
+      "video": "But what is a Neural Network?",
+      "channel": "3Blue1Brown",
+      "timestamp": "11:34–14:45"
+    }
+  },
+  {
+    "id": "QA-02",
+    "question": "What role do hidden layers in a neural network play when recognising handwritten digits?",
+    "answer": "Hidden layers decompose complex recognition into hierarchical features. Early layers detect edges and strokes, while deeper layers combine them into higher-level patterns like loops or digit components.",
+    "source": {
+      "video": "But what is a Neural Network?",
+      "channel": "3Blue1Brown",
+      "timestamp": "8:38"
+    }
+  },
+  {
+    "id": "QA-03",
+    "question": "Why is softmax applied at the final step of a transformer, and what are logits?",
+    "answer": "Softmax converts raw output scores (logits) into a probability distribution over tokens. Logits are unnormalized values from the model, and softmax ensures outputs are positive and sum to one while preserving ranking.",
+    "source": {
+      "video": "Transformers, the tech behind LLMs",
+      "channel": "3Blue1Brown",
+      "timestamp": "Final section"
+    }
+  },
+  {
+    "id": "QA-04",
+    "question": "What core limitation of traditional machine learning does deep learning address, and how does this relate to 'deep'?",
+    "answer": "Traditional ML requires manual feature engineering, while deep learning automatically learns hierarchical representations. 'Deep' refers to multiple layers that progressively learn more abstract features.",
+    "source": {
+      "video": "What is Deep Learning?",
+      "channel": "CampusX",
+      "timestamp": "Intro section"
+    }
+  },
+  {
+    "id": "QA-05",
+    "question": "What is overfitting in machine learning, how does it arise, and why does it hurt real-world performance?",
+    "answer": "Overfitting occurs when a model memorizes training data including noise, failing to generalize to new data. It arises from excessive model capacity and leads to poor real-world predictions.",
+    "source": {
+      "video": "All About ML & Deep Learning",
+      "channel": "CodeWithHarry",
+      "timestamp": "Overfitting section"
+    }
+  }
+]
