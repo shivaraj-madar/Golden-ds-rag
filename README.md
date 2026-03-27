@@ -45,13 +45,6 @@ pip install -r requirements.txt
 ```
 *(Takes 3–5 minutes. Downloads sentence-transformers and ChromaDB.)*
 
-### 3. Add your Anthropic API key
-Open `.env` and replace the placeholder:
-```
-ANTHROPIC_API_KEY=sk-ant-your-real-key-here
-```
-Get a key at https://console.anthropic.com/settings/keys
-
 ---
 
 ## Run order (always follow this order)
