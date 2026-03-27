@@ -10,6 +10,8 @@ hand-crafted QA pairs to measure retrieval quality.
 
 ```
 rag_assignment/
+├──data
+  ├──dataset.json
 ├── ingest.py          ← Step 1: fetch transcripts, embed, store
 ├── rag.py             ← Step 2: query function + smoke test
 ├── evaluate.py        ← Step 3: run all 5 golden QA pairs
@@ -95,3 +97,25 @@ python evaluate.py
 2. 3Blue1Brown — *Transformers, the tech behind LLMs* (English)
 3. CampusX — *What is Deep Learning?* (Hindi → auto-translated)
 4. CodeWithHarry — *All About ML & Deep Learning* (Hindi → auto-translated)
+
+# Results 
+───────────────────────────────────────────────────── Evaluation Report ─────────────────────────────────────────────────────
+┏━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ ID      ┃ Source (top-1) ┃ Source (top-4) ┃ Keywords   ┃ Top relevance ┃ Expected source                      ┃
+┡━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ QA-01   │ ✓              │ ✓              │ 80%        │ 86%           │ But what is a Neural Network?        │
+├─────────┼────────────────┼────────────────┼────────────┼───────────────┼──────────────────────────────────────┤
+│ QA-02   │ ✓              │ ✓              │ 100%       │ 68%           │ But what is a Neural Network?        │
+├─────────┼────────────────┼────────────────┼────────────┼───────────────┼──────────────────────────────────────┤
+│ QA-03   │ ✓              │ ✓              │ 100%       │ 81%           │ Transformers, the tech behind LLMs   │
+├─────────┼────────────────┼────────────────┼────────────┼───────────────┼──────────────────────────────────────┤
+│ QA-04   │ ✓              │ ✓              │ 80%        │ 79%           │ What is Deep Learning?               │
+├─────────┼────────────────┼────────────────┼────────────┼───────────────┼──────────────────────────────────────┤
+│ QA-05   │ ✓              │ ✓              │ 60%        │ 83%           │ All About ML & Deep Learning        │
+└─────────┴────────────────┴────────────────┴────────────┴───────────────┴──────────────────────────────────────┘
+
+  Source precision (top-1):  5/5  (100%)
+  Source hit rate  (top-4):  5/5  (100%)
+  Avg keyword coverage:      84%
+
+  Perfect source precision! Your retriever correctly routes every question.
